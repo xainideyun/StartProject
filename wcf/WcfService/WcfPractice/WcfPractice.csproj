@@ -76,6 +76,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -108,10 +109,28 @@
   <ItemGroup>
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="WcfFirst.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WcfFirst.aspx.cs">
+      <DependentUpon>WcfFirst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WcfFirst.aspx.designer.cs">
+      <DependentUpon>WcfFirst.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WcfInvoke\WcfInvoke.csproj">
+      <Project>{deeab897-5785-47fa-ac62-15644546bff1}</Project>
+      <Name>WcfInvoke</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcfServiceLib\WcfServiceLib.csproj">
+      <Project>{849c997f-f76f-4980-8f71-f5dd4251a348}</Project>
+      <Name>WcfServiceLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

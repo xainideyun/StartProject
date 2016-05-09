@@ -14,13 +14,13 @@ namespace WcfConsole
     {
         static void Main(string[] args)
         {
-            Uri baseAddress = new Uri("http://localhost:9999/User");                    // 创建宿主的基地址
+            Uri baseAddress = new Uri("http://localhost:9999");                    // 创建宿主的基地址
             using (ServiceHost host = new ServiceHost(typeof(User), baseAddress))
             {
                 host.AddServiceEndpoint(typeof(IUser), new WSHttpBinding(), "");        // 向宿主中添加终结点
-                ServiceMetadataBehavior smb = new ServiceMetadataBehavior();            // 将HttpGetEnabled数据设置为true
-                smb.HttpGetEnabled = true;
-                host.Description.Behaviors.Add(smb);                                    // 将行为添加到Behaviors中
+                //ServiceMetadataBehavior smb = new ServiceMetadataBehavior();            // 将HttpGetEnabled数据设置为true
+                //smb.HttpGetEnabled = true;
+                //host.Description.Behaviors.Add(smb);                                    // 将行为添加到Behaviors中
                 host.Open();                                                            // 打开宿主
                 Console.WriteLine("开始监听9999端口");
                 Console.Read();
