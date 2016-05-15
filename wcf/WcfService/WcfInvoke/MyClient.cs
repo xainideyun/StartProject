@@ -16,6 +16,11 @@ namespace WcfInvoke
 
         }
 
+        public void GetEmail()
+        {
+            base.Channel.GetEmail();
+        }
+
         public string GetName()
         {
             return base.Channel.GetName();

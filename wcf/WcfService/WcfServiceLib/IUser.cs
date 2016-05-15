@@ -12,6 +12,9 @@ namespace WcfServiceLib
     public interface IUser
     {
         [OperationContract]
-        string   GetName();
+        string GetName();
+
+        [OperationContract(IsOneWay = true)]
+        void GetEmail();
     }
 }

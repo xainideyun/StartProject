@@ -21,14 +21,16 @@ namespace WcfPracticeQuote
 
         private void btnGet_Click(object sender, EventArgs e)
         {
-            WcfQuote.UserClient uc = new WcfQuote.UserClient();
-            lblText.Text = uc.GetName();
+            //WcfQuote.UserClient uc = new WcfQuote.UserClient();
+            //lblText.Text = uc.GetName();
+            //lblText.Text+= 
         }
 
         private void btnGet2_Click(object sender, EventArgs e)
         {
             MyClient service = new MyClient(new WSHttpBinding(SecurityMode.None),new EndpointAddress("http://localhost:9999"));
             lblText2.Text = service.GetName();
+            service.GetEmail();
         }
     }
 }

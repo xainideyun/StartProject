@@ -21,6 +21,7 @@ namespace WcfPractice
         {
             MyClient service = new MyClient(new WSHttpBinding(SecurityMode.Message),new EndpointAddress("http://localhost:9999") );
             lblName.Text = service.GetName();
+            service.GetEmail();
         }
     }
 }
