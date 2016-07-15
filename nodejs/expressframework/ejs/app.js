@@ -28,8 +28,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+
+// 自己写的路由
 var num = require('./routes/num');
 app.use('/num', num);
+// 传递querystring
+var param = require('./routes/param');  // 第一种方式
+app.use('/param', param);
+// 模版引擎
+app.use('/tmplengine',require('./routes/tmplengine'));
+// 使用模板页
+app.use('/childpage1',require('./routes/childpage1'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -61,6 +70,8 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+
 
 
 module.exports = app;
