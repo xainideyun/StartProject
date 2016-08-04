@@ -2,7 +2,9 @@ class OptimizationConvert
 {
   public static void main(String[] args)
   {
-    toBin(6);
+    // toBin(6);
+    // toBa(60);
+    toHex(129);
   }
   private static void toBin(int num)
   {

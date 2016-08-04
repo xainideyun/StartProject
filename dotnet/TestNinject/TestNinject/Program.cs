@@ -17,6 +17,7 @@ namespace TestNinject
             kerner.Bind<DBManager>().ToSelf();
             var db = kerner.Get<DBManager>();
             db.Show();
+
             Console.ReadKey();
         }
     }
