@@ -10,8 +10,8 @@ namespace CSharpVSJava
     {
         static void Main(string[] args)
         {
-            InnerClass a = new InnerClass();
-            
+
+
         }
     }
 }
