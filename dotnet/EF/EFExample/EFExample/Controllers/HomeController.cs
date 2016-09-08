@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 
@@ -10,6 +11,10 @@ namespace EFExample.Controllers
     {
         public ActionResult Index()
         {
+            var a = Assembly.Load("Sunxsh.Test.Lib");
+            var b = a.CreateInstance("Sunxsh.Test.Lib.MyClass");
+            
+
             return View();
         }
 

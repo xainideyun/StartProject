@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFExample", "EFExample\EFEx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFLib", "EFLib\EFLib.csproj", "{CE58ADCC-708A-418E-8AFC-631844B2B322}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sunxsh.Test.Lib", "Sunxsh.Test.Lib\Sunxsh.Test.Lib.csproj", "{6636CD04-2E04-4526-A516-34F380953D24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CE58ADCC-708A-418E-8AFC-631844B2B322}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE58ADCC-708A-418E-8AFC-631844B2B322}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE58ADCC-708A-418E-8AFC-631844B2B322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6636CD04-2E04-4526-A516-34F380953D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6636CD04-2E04-4526-A516-34F380953D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6636CD04-2E04-4526-A516-34F380953D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6636CD04-2E04-4526-A516-34F380953D24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

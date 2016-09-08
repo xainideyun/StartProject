@@ -288,6 +288,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Lib\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -301,6 +302,10 @@
     <ProjectReference Include="..\EFLib\EFLib.csproj">
       <Project>{ce58adcc-708a-418e-8afc-631844b2b322}</Project>
       <Name>EFLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sunxsh.Test.Lib\Sunxsh.Test.Lib.csproj">
+      <Project>{6636cd04-2e04-4526-a516-34f380953d24}</Project>
+      <Name>Sunxsh.Test.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
