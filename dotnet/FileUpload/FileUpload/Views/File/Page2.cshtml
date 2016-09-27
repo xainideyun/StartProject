@@ -1,0 +1,55 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body class="container">
+    <hr style="height:100px;" />
+    <div class="row">
+        <div class="col-lg-5">
+            <button class="btn btn-primary">确定</button>
+            <input type="file" name="name" value="" id="abc" />
+            <audio controls="controls" id="ddd">
+            </audio>
+        </div>
+    </div>
+</body>
+@Scripts.Render("~/bundles/jquery")
+
+<script>
+    $(function () {
+        var fileInputElement = document.getElementById("abc");
+        $(fileInputElement).change(function (e) {
+
+        });
+        $("button").click(function () {
+
+            var oMyForm = new FormData();
+
+            oMyForm.append("username", "Groucho");
+            oMyForm.append("accountnum", 123456); // 数字123456被立即转换成字符串"123456"
+
+            // fileInputElement中已经包含了用户所选择的文件
+            oMyForm.append("userfile", fileInputElement.files[0]);
+
+            var oFileBody = "<a id=\"a\"><b id=\"b\">hey!</b></a>"; // Blob对象包含的文件内容
+            var oBlob = new Blob([oFileBody], { type: "text/xml" });
+
+            oMyForm.append("webmasterfile", oBlob);
+
+            var oReq = new XMLHttpRequest();
+            oReq.open("POST", "/File/FormData");
+            oReq.send(oMyForm);
+        });
+    })
+</script>
+</html>

@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>    
+
+    @Styles.Render("~/Content/FileUpload")
+</head>
+<body class="container-fluid">
+    <hr style="height:100px;" />
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <input type="file" name="file1[]" id="file1" class="file" />
+        </div>
+    </div>
+</body>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/FileUpload")
+    
+</html>

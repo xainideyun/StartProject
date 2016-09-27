@@ -1,0 +1,79 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    @Styles.Render("~/Content/FileUpload")
+    <link href="~/css/cscecfile.css" rel="stylesheet" />
+</head>
+<body class="container-fluid">
+    <hr style="height:100px;" />
+    <div class="row">
+        <hr />
+        <div style="margin:0 auto; width:80%;">
+            <input type="file" name="file1" data-url="@Url.Content("~/File/Upload")" class="cscecfile" data-extension="png,jpg,jpeg,txt,doc,docx" />
+        </div>
+        @*<input type="text" name="file3" class="cscecfile" />*@
+        @*<input type="file" name="file4" class="cscecfile" />*@
+
+        <hr />
+        @*<div style="margin:0 auto; width:80%;">
+
+                <div class="file_container">
+                    <div class="file_attachments">
+                        <div class="file_attachment" data-num="1">
+                            <div class="file_sign">
+                                <div class="file_img_container"><img src="~/img/workflow.png" class="file_img" /></div>
+                            </div>
+                            <div class="file_description">
+                                <span class="file_note">workflow.png</span>
+                            </div>
+                            <div class="file_info">
+                                <span class="file_note">192KB</span>
+                            </div>
+                            <div class="file_remove">
+                                <span class="file_note"><i class="glyphicon glyphicon-trash"></i></span>
+                            </div>
+                        </div>
+                        <div class="file_attachment" data-num="2">
+                            <div class="file_sign">
+                                <div class="file_img_container"><img src="~/img/1.jpg" class="file_img" /></div>
+                            </div>
+                            <div class="file_description">
+                                <span class="file_note">workflow.png</span>
+                            </div>
+                            <div class="file_info">
+                                <span class="file_note">829KB</span>
+                            </div>
+                            <div class="file_remove">
+                                <span class="file_note"><i class="glyphicon glyphicon-trash"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group file_operation">
+                        <div class="form-control"></div>
+                        <div class="input-group-btn">
+                            <button class="btn btn-primary"><i class="glyphicon glyphicon-folder-open"></i> 选择...</button>
+                            <input type="file" name="file4" class="cscecfile" />
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+
+
+    </div>
+</body>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@*@Scripts.Render("~/bundles/FileUpload")*@
+<script src="~/js/page.js"></script>
+
+</html>

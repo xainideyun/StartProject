@@ -1,0 +1,97 @@
+﻿@model FileUpload.Models.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Page3</title>
+    @Styles.Render("~/Content/FileUpload")
+    <link href="~/css/cscecfile.css" rel="stylesheet" />
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>User</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Age, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Age, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Age, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Code, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Code, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Code, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.FilePath, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input type="file" id="file" name="FilePath" class="cscecfile" data-url="@Url.Content("~/File/Upload")" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <a id="btn" value="Save" class="btn btn-default" >提交</a>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@*@Scripts.Render("~/bundles/FileUpload")*@
+<script src="~/js/page.js"></script>
+<script>
+    $("#btn").click(function () {
+        var filedata = $("#file").cscecfile("formdata");
+        var formdata = new FormData();
+        formdata.append("Name", $("#Name").val());
+        formdata.append("Age", $("#Age").val());
+        formdata.append("Code", $("#Code").val());
+        for (var key in filedata) {
+            formdata.append(key, filedata[key]);
+        }
+        var settings = {
+            url: "/File/Upload",
+            type: "post",
+            dataType: "json",
+            contentType: false,
+            processData: false,
+            data: formdata,
+            success: function (data, status, jqXHR) {
+                console.log(data);
+            }
+        };
+        $.ajax(settings);
+        return false;
+    });
+</script>
+</html>
