@@ -342,7 +342,11 @@
             case "formdata":
                 obj = self._analysisFormData();
                 break;
+            case "dellist":
+                obj = self.delFile;
+                break;
             default:
+                break;
         }
         return obj;
     };

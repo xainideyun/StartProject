@@ -49,7 +49,7 @@
             <div class="form-group">
                 @Html.LabelFor(model => model.FilePath, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    <input type="file" id="file" name="FilePath" class="cscecfile" data-url="@Url.Content("~/File/Upload")" />
+                    <input type="file" id="file" name="FilePath" class="cscecfile" data-files='[{url:"/img/1.jpg",id:"123",filename:"abc.png",filesize:2899}]' data-url="@Url.Content("~/File/Upload")" />
                 </div>
             </div>
 
@@ -71,11 +71,13 @@
 <script src="~/js/page.js"></script>
 <script>
     $("#btn").click(function () {
-        var filedata = $("#file").cscecfile("formdata");
+        var file = $("#file");
+        var filedata = file.cscecfile("formdata");
         var formdata = new FormData();
         formdata.append("Name", $("#Name").val());
         formdata.append("Age", $("#Age").val());
         formdata.append("Code", $("#Code").val());
+        formdata.append("DelFile", file.data("dellist"));
         for (var key in filedata) {
             formdata.append(key, filedata[key]);
         }
