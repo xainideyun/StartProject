@@ -77,7 +77,7 @@
         formdata.append("Name", $("#Name").val());
         formdata.append("Age", $("#Age").val());
         formdata.append("Code", $("#Code").val());
-        formdata.append("DelFile", file.data("dellist"));
+        formdata.append("DelFile", file.cscecfile("dellist"));
         for (var key in filedata) {
             formdata.append(key, filedata[key]);
         }
@@ -89,6 +89,7 @@
             processData: false,
             data: formdata,
             success: function (data, status, jqXHR) {
+                file.cscecfile("uploadsuccess")
                 console.log(data);
             }
         };

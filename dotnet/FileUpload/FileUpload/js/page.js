@@ -249,6 +249,7 @@
             self.formdata = new FormData();
             self.filerecord = 0;
             self.list.find("[data-type='new']").removeAttr("data-num").removeAttr("data-type");
+            self.delFile = [];
         },
         _setTooltip: function (obj, cls) {
             var self = this;
@@ -344,6 +345,9 @@
                 break;
             case "dellist":
                 obj = self.delFile;
+                break;
+            case "uploadsuccess":
+                obj = self._uploadComplete();
                 break;
             default:
                 break;
