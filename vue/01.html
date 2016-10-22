@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<style>
+		::selection{
+			color:#fff;
+			background-color: #000;
+		}
+	</style>
+	<script src="lib/vue.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="app" class="alert alert-info">
+			{{name}}
+			<label class="col-md-2">{{obj.name}}</label>
+		</div>
+	</div>
+	<button class='btn btn-primary' id='btn'>确定</button>
+	<script>
+		window.onload = function(){
+			var data = {name : '孙小双', obj : {shou:1,tui:2}}
+			var a = new Vue({
+				el:"#app",
+				data:{
+					name:'李娟娟',
+					obj:data
+				}
+			});
+			var i = 0;
+			document.getElementById("btn").onclick = function(){
+				data.name = data.name + i++;
+			}
+		}
+	</script>
+
+</body>
+</html>
