@@ -12,7 +12,7 @@ class ExceptionDemo2
   {
     DemoCls1 c = new DemoCls1();
     System.out.println(c.calc(5,0));
-    
+
 
   }
 }

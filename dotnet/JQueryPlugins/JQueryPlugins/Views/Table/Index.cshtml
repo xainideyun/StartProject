@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@section scripts{
+    <script src="~/Scripts/table/jquery.cscectable.js"></script>
+    <script src="~/Scripts/table/table.js"></script>
+}
+
+<br />
+<style>
+    * {
+        font-family: Arial,Helvetica,sans-serif;
+        font-size: 100%;
+    }
+
+    .pagination {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pagination-detail {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .pagination-detail .pagination-note{
+        margin-left:5px;
+        margin-right:5px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .cscec-table {
+        border: none;
+        overflow: hidden;
+        box-shadow: none;
+    }
+    .cscec-table table > tbody tr:hover {
+        cursor:pointer;
+    }
+
+</style>
+<div class="container">
+    <table class="table table-bordered table-hover templatemo-user-table">
+        <thead>
+            <tr>
+                <td>序号</td>
+                <td>姓名</td>
+                <td>员工号</td>
+                <td>岗位</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>孙小双</td>
+                <td>SJ8928</td>
+                <td>企管信息员</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>李娟娟</td>
+                <td>LK78283</td>
+                <td>开发工程师</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>李怡然</td>
+                <td>SJ87921</td>
+                <td>客服</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

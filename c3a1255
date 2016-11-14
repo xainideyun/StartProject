@@ -1,0 +1,265 @@
+[33mcommit 827dd121d1eb0c26f02cdba1a9dc7f7e33b764de[m
+Merge: 2699bf8 c3a1255
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon Sep 19 08:06:31 2016 +0800
+
+    Merge branch 'master' of github.com:xainideyun/StartProject
+    nihaoma
+
+[33mcommit 2699bf8331422ba41ec29fd19600091573808f4a[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon Sep 19 08:03:21 2016 +0800
+
+    从vs提交的
+
+[33mcommit c3a1255c9e9dd4d5b2c31c5048b5b76a49fd459b[m
+Author: 孙小双 <sunxsaljj@163.com>
+Date:   Fri Sep 16 15:43:28 2016 +0800
+
+    这是我从老爷机上提交的文件
+
+[33mcommit 1f3f356a30f8901cfb36f819499de616f9804d63[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Fri Sep 16 15:17:14 2016 +0800
+
+    从克隆的库里面提交的文件
+
+[33mcommit eb3325edb27554a555f0fbdb1f593d9b005ef149[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Thu Sep 8 15:56:11 2016 +0800
+
+    9月8号 提交
+
+[33mcommit 126e1b07db45243fcd7ea0f20bfb7f132913c5da[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Tue Aug 23 16:17:33 2016 +0800
+
+    8月23日提交
+
+[33mcommit b2fc7678a4562ce8963b00e2b8bf20d5f146c2e6[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Thu Aug 4 18:35:10 2016 +0800
+
+    8月4日提交
+
+[33mcommit a39dc88c22f6c7f1b3b164e961bd3fa9cd8317a8[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Wed Jul 27 08:34:12 2016 +0800
+
+    java练习提交
+
+[33mcommit 6c34c4012d7aaebd4da3c8bd574cf713c9d58aa1[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Fri Jul 15 14:05:17 2016 +0800
+
+    nodejs修改、Ninject依赖注入、requirejs使用更新
+
+[33mcommit 958862c276e5145a960e09b955226bc94ea34199[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon Jul 4 15:09:38 2016 +0800
+
+    winform
+
+[33mcommit e4428e067214734a50e195918d553dfd6884dec7[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon Jul 4 15:07:16 2016 +0800
+
+    自己写的.gitignore，重新提交一下
+
+[33mcommit f49e1021a7432f1b8fd89606385c3ce115ff4b86[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon Jul 4 14:45:52 2016 +0800
+
+    提交之前vs生成的.gitignore忽略的文件
+
+[33mcommit e8a2dce4f6b99e5824b72dee3c27fa5bcf4c0111[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon Jul 4 14:31:32 2016 +0800
+
+    express框架实例
+
+[33mcommit 9978385881b12148c9247f0c4926497a1c55a10a[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon Jul 4 14:22:26 2016 +0800
+
+    不知道改了什么，提交了吧！
+
+[33mcommit b42ecac7c10dad33d83bc6f7200bcd806df3aaa6[m
+Merge: 45ac4e4 b0c8dc5
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Thu Jun 23 08:47:21 2016 +0800
+
+    Merge branch 'master' of github.com:xainideyun/StartProject
+
+[33mcommit 45ac4e4d8d04b44a16ac1175b1e8c921e225a724[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Thu Jun 23 08:44:11 2016 +0800
+
+    nodejs practice
+
+[33mcommit b0c8dc55a88cb16392f91f4bd7acd85db0d51125[m
+Author: unknown <孙小双>
+Date:   Mon Jun 13 23:29:28 2016 +0800
+
+    家里电脑的推送"
+    
+    git commit -m 家里电脑的推送"
+
+[33mcommit 821ee56a9a4f0bc4e16583e6a2a833625ce118db[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon Jun 13 19:55:29 2016 +0800
+
+    nodejs的模块和包
+
+[33mcommit c9f4bc4869583ad4fab91baa94f13a666caabc0f[m
+Merge: 5422f13 bf0ec04
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon Jun 13 18:47:56 2016 +0800
+
+    Merge branch 'master' of github.com:xainideyun/StartProject
+    合并
+
+[33mcommit 5422f139878d6e6c28d49de36407d7eba463c45f[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon Jun 13 18:46:52 2016 +0800
+
+    nodejs submit
+
+[33mcommit bf0ec04890a8171cb8bc713bed734fc871bd61b6[m
+Author: 孙远杰 <281267775@qq.com>
+Date:   Mon Jun 13 12:10:33 2016 +0800
+
+    第三次从虚拟机提交
+
+[33mcommit 78814199da275df12736ac9c9c228376c7b61d6f[m
+Author: 孙远杰 <281267775@qq.com>
+Date:   Mon Jun 13 11:52:54 2016 +0800
+
+    从虚拟机第二次提交
+
+[33mcommit ea38a8df9cc2e6834b7515fc42eb94289925ec57[m
+Author: 孙远杰 <281267775@qq.com>
+Date:   Mon Jun 13 11:51:20 2016 +0800
+
+    从虚拟机提交
+
+[33mcommit 2daca50f9bbc564f910ee350e49347e2d7216b3f[m
+Author: 孙远杰 <281267775@qq.com>
+Date:   Mon Jun 13 11:15:35 2016 +0800
+
+    d
+
+[33mcommit 1f19b68f4498879ea0caea54951242c05d760847[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon Jun 6 15:54:24 2016 +0800
+
+    nodejs
+
+[33mcommit 9c4c9908a40a47ffa5f495187a0036818ea6b2aa[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Fri Jun 3 08:46:42 2016 +0800
+
+    markdown edit
+
+[33mcommit a17f08b279ba53b9c143eedf62da661afb8c1351[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Tue May 24 08:57:39 2016 +0800
+
+    winform/UDPApplication submit
+
+[33mcommit 169f221b6219e08ba3c21969ab1622a0949d682d[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon May 16 16:45:23 2016 +0800
+
+    delete
+
+[33mcommit 20f2996a7950ac878c842ff1843b8f3b1283e0de[m
+Merge: 045d5e2 947afa4
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon May 16 16:43:40 2016 +0800
+
+    markdown
+
+[33mcommit 045d5e29947ea89e45b21243ac3377ce14dd4868[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon May 16 16:40:37 2016 +0800
+
+    markdown
+
+[33mcommit 947afa415772be949210ac4fcd482fd236301ace[m
+Author: dancy sun <sunxsaljj@163.com>
+Date:   Mon May 16 16:38:48 2016 +0800
+
+    Update README.md
+
+[33mcommit 90ef5a7f5f87163a222342ffade25ba2d1573507[m
+Author: dancy sun <sunxsaljj@163.com>
+Date:   Mon May 16 16:36:11 2016 +0800
+
+    Update README.md
+
+[33mcommit 8b14b3552d5ba3eb2e091f39df43b70202f036cd[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Sun May 15 20:49:22 2016 +0800
+
+    单工，双工通信
+
+[33mcommit d0c5f72b336a6badeb9cdbbc3afc90361d8696a6[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon May 9 11:21:18 2016 +0800
+
+    practice success
+
+[33mcommit a7b226ca2fb8cc4d318f035535ad4db9b9c7ec3f[m
+Author: xainideyun <sunxsaljj@163.com>
+Date:   Mon May 9 08:32:00 2016 +0800
+
+    Create README.md
+
+[33mcommit 79245f7b0d13d80c5eff30b266b78d43690785c4[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Mon May 9 08:25:51 2016 +0800
+
+    modify
+
+[33mcommit 96302acb93c6684731a681f31e27ee57fb3f0a80[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Sun May 8 17:33:54 2016 +0800
+
+    删除就数据
+
+[33mcommit 5113b4c26fe71f52a3f38fc9cae1dd96126f77ca[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Sun May 8 17:23:27 2016 +0800
+
+    删除自动生成的代码
+
+[33mcommit 6e6375acb112af9fb125d350b9c27fe342b000f3[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Sun May 8 17:20:53 2016 +0800
+
+    WCFServiceLib submit
+
+[33mcommit 5fa97300e523658c4899a61f80554e0ed0f1e02e[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Sun May 8 17:19:08 2016 +0800
+
+    git配置
+
+[33mcommit 43cf7d368987cacf4f5b400169bce64bc7442878[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Sun May 8 10:43:39 2016 +0800
+
+    third
+
+[33mcommit 15426a9c2bc61268d273e9f6727a580566321eeb[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Sun May 8 10:32:34 2016 +0800
+
+    second
+
+[33mcommit 5c43171518aa77b1e29f68dc2509c04cbf940c77[m
+Author: sunxsh <sunxsaljj@163.com>
+Date:   Sun May 8 10:25:17 2016 +0800
+
+    submit

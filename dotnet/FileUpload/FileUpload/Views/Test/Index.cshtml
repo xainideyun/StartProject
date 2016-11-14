@@ -1,0 +1,41 @@
+﻿
+@{
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    @section scripts{
+        <script>
+            $(function () {
+                $("#btn").click(function () {
+                    var formdata = new FormData();
+                    formdata.append("name", "孙小双");
+                    formdata.append("age", 28);
+                    formdata.append("number", "2071714117");
+                    $.ajax({
+                        url: "/Test/Test1",
+                        type: "post",
+                        dataType: "json",
+                        data: formdata,
+                        contentType: false,
+                        processData: false,
+                        success: function (data) {
+                            console.log(data);
+                        }
+                    });
+                });
+            });
+        </script>
+    }
+</head>
+<body>
+    <div>
+        <button id="btn" >确定</button>
+    </div>
+</body>
+</html>

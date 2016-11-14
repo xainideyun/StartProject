@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Apliy</title>
+
+	<style>
+		@keyframes booter{
+			0% {opacity: 1;}
+		}
+		@keyframes booter{
+			100% {transform: scale(2.5);opacity: 0;}
+		}
+		html,body{
+			display: flex;
+			background-color: #1e577e;
+			justify-content: center;
+			align-items: center;
+			height:100%;
+			overflow: hidden;
+		}
+		#apliy{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 500px;
+			width: 500px;
+			border-radius: 50%;
+		}
+		#main{
+			height: 200px;
+			width: 200px;
+			background-image: url("img/2.png");
+			cursor: pointer;
+			z-index: 100;
+		}
+		.boot{
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 2px solid #fff;
+			border-radius: 50%;
+			opacity: 1;
+			width:190px;
+			height:190px;
+		}
+		.boot.go {
+			/*animation: booter 2s linear infinite;*/
+			animation-name: booter;
+			animation-duration: 2s;
+			animation-timing-function: linear;
+			/*animation-iteration-count: infinite;*/
+		}
+	</style>
+</head>
+<body>
+	<div id="apliy">
+		<div id="main"></div>
+		<div class="boot"></div>
+		<div class="boot"></div>
+		<div class="boot"></div>
+		<div class="boot"></div>
+<!-- 		<div class="boot"></div>
+		<div class="boot"></div> -->
+	</div>
+</body>
+<script>
+	var boots = document.querySelectorAll(".boot"), main = document.querySelector("#main");
+	console.log(boots);
+	main.onclick = function(){
+		for (var i = 0; i < boots.length; i++) {
+			// (function(index){
+			// 	setTimeout(function(){boots[index].classList.add("go");}, i*800);
+			// })(i); 
+			boots[i].classList.add("go");
+			boots[i].style.animationDelay = 1 * i + "s";
+			boots[i].addEventListener("animationend", function(a){
+				console.log(a);
+			});
+		}
+	};
+</script>
+</html>

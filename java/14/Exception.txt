@@ -1,0 +1,2 @@
+java.lang.NullPointerException
+	at pack13.IODemo19.main(IODemo19.java:7)

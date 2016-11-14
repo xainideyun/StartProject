@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>孙小双</Name>
+  <Age>28</Age>
+  <Code>2071714117</Code>
+  <School>新大</School>
+  <Hobby>
+    <string>篮球</string>
+    <string>足球</string>
+    <string>电子竞技</string>
+    <string>游泳</string>
+    <string>下棋</string>
+  </Hobby>
+</Person>

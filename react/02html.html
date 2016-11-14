@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<style>
+		*{margin:0;padding:0;border:0;}
+		body {
+			font-family: arial, 宋体, serif;
+			font-size:12px;
+		}
+		#nav {
+			width: 1000px; line-height: 24px; list-style: none;display: block;
+		}
+		#nav a {
+			color:#fff;display: block; text-align:center;width: 200px; 
+		}
+		#nav a:link {
+			color:#fff; text-decoration:none;
+		}
+		#nav a:visited {
+			color:#fff;text-decoration:none;
+		}
+		#nav a:hover {
+			color:#FFF;text-decoration:none;font-weight:bold;
+		}
+		/*主栏目*/
+		#nav ul{
+			list-style:none;
+		}
+
+		#nav li{
+			float:left;
+			background:#00008B;
+			position: relative; 
+		}
+		#nav li a{
+			display: block;
+		}
+		/*子栏目*/
+		#nav li ul {
+			line-height: 27px;
+			list-style-type: none;
+			text-align:left; 
+			width: 200px;
+			position: relative;
+			display:none;
+		}
+
+		#nav li ul li{
+			width: 100%;
+			background: #4169E1;
+		}
+		#nav li:hover > ul.child { display: block; }
+
+	</style>
+	<script type="text/javascript" src="jquery1.9.1.min.js"></script> 
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+			$("#nav ul.child").removeClass("child");
+			$("#nav li").has("ul").hover(function(){
+				$(this).addClass("current").children("ul").fadeIn();
+			}, function() {
+				$(this).removeClass("current").children("ul").hide();
+			});
+		});
+	</script>
+	<title>导航栏测试</title>
+</head>
+<body>
+	<div id="nav">
+		<ul><!-- 导航总框架 -->
+			<li><a href="#">最新新闻</a></li><!-- 主栏目 -->
+			<ul class="child">
+				<li><a href="#">国内新闻</a></li><!-- 子栏目 -->
+				<li><a href="#">国际新闻</a></li>
+				<li><a href="#">娱乐新闻</a></li>
+			</ul>
+			<li><a href="#">资料下载</a></li>
+			<ul class="child">
+				<li><a href="#">政策资料</a></li><!-- 子栏目 -->
+				<li><a href="#">规范文件</a></li>
+				<li><a href="#">视频</a></li>
+			</ul>
+			<li><a href="#">用户信息</a></li>
+			<ul class="child">
+				<li><a href="#">个人帐号</a></li><!-- 子栏目 -->
+				<li><a href="#">修改密码</a></li>
+				<li><a href="#">我的空间</a></li>
+			</ul>
+			<li><a href="#">联系我们</a></li>
+			<ul class="child">
+				<li><a href="#">个人</a></li><!-- 子栏目 -->
+				<li><a href="#">企业</a></li>
+				<li><a href="#">单位</a></li>
+			</ul>
+		</ul>
+	</div>
+</body>
+</html>

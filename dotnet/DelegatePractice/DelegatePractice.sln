@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice1", "Practice1\Practice1.csproj", "{34412C0D-8046-4FAA-AA5F-86886CB8E7DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02打开默认浏览器", "_02打开默认浏览器\_02打开默认浏览器.csproj", "{67970568-BBB7-44FF-80DA-41257ADC0637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03类的序列化与反序列化", "_03类的序列化与反序列化\_03类的序列化与反序列化.csproj", "{5570DF3D-225C-4363-AE53-E620F8EC6A20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_04类对象序列化为xml与反序列化xml为类对象", "_04类对象序列化为xml与反序列化xml为类对象\_04类对象序列化为xml与反序列化xml为类对象.csproj", "{B68065A5-8483-4F5C-963F-4A2116CB2B93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_05XPath使用", "_05XPath使用\_05XPath使用.csproj", "{FA305354-14E8-4326-A0ED-5BA0066864E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34412C0D-8046-4FAA-AA5F-86886CB8E7DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34412C0D-8046-4FAA-AA5F-86886CB8E7DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34412C0D-8046-4FAA-AA5F-86886CB8E7DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34412C0D-8046-4FAA-AA5F-86886CB8E7DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67970568-BBB7-44FF-80DA-41257ADC0637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67970568-BBB7-44FF-80DA-41257ADC0637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67970568-BBB7-44FF-80DA-41257ADC0637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67970568-BBB7-44FF-80DA-41257ADC0637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5570DF3D-225C-4363-AE53-E620F8EC6A20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5570DF3D-225C-4363-AE53-E620F8EC6A20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5570DF3D-225C-4363-AE53-E620F8EC6A20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5570DF3D-225C-4363-AE53-E620F8EC6A20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B68065A5-8483-4F5C-963F-4A2116CB2B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68065A5-8483-4F5C-963F-4A2116CB2B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68065A5-8483-4F5C-963F-4A2116CB2B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68065A5-8483-4F5C-963F-4A2116CB2B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA305354-14E8-4326-A0ED-5BA0066864E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA305354-14E8-4326-A0ED-5BA0066864E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA305354-14E8-4326-A0ED-5BA0066864E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA305354-14E8-4326-A0ED-5BA0066864E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

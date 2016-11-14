@@ -1,0 +1,19 @@
+{
+  "name": "sunxsh",
+  "version": "1.0.1",
+  "description": "sunxsh",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "sunxsh",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.13.2",
+    "css-loader": "^0.21.0",
+    "style-loader": "^0.13.0"
+  }
+}

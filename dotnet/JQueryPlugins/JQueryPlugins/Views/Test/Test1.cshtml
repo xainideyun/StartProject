@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Test1";
+}
+
+@section scripts{
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                var name = $("#p1").val(), age = parseInt($("#p2").val());
+                var formdata = new FormData();
+                formdata.append("name", name);
+                formdata.append("age", age);
+                $.ajax({
+                    url: "Test2",
+                    data: formdata,
+                    type: "post",
+                    dataType: "json",
+                    contentType: false,
+                    processData: false,
+                    success: function (data) {
+                        console.log(data);
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+<h2>Test1</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <input id="p1" class="form-control" placeholder="姓名" />
+        </div>
+        <div class="col-md-5">
+            <input id="p2" class="form-control" placeholder="年龄" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <button id="btn" class="btn btn-primary">确定</button>
+        </div>
+    </div>
+</div>
+
