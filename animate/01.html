@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>宇宙特效</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="" rel="stylesheet">
+	<link rel="stylesheet" href="animate.min.css">
+	<style>
+		@keyframes change{
+			0%{
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+			100%{
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+		html,body{
+			height: 100%;
+			overflow: hidden;
+		}
+		body{
+			background-color: #000;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		ul{
+			position: relative;
+		}
+		ul li{
+			position: absolute;
+			border:2px solid #666;
+			border-radius: 50%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation-name: change;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+		li:nth-child(1){
+			width: 60px;
+			height: 60px;
+			box-shadow: 0 0 50px #c90;
+			background-color: #c90;
+			border: none;
+			animation-duration: 1s;
+		}
+		li:nth-child(2){
+			width: 120px;
+			height: 120px;
+			animation-duration: 1.5s;
+		}
+		li:nth-child(2) span{
+			background-color: red;
+		}
+		li:nth-child(3){
+			width: 180px;
+			height: 180px;
+			animation-duration: 2s;
+		}
+		li:nth-child(3) span{
+			background-color: #fff;
+		}
+		li:nth-child(4){
+			width: 240px;
+			height: 240px;
+			animation-duration: 2.5s;
+		}
+		li:nth-child(4) span{
+			background-color: blue;
+		}
+		li:nth-child(5){
+			width: 300px;
+			height: 300px;
+			animation-duration: 3s;
+		}
+		li:nth-child(5) span{
+			background-color: pink;
+		}
+		li:nth-child(6){
+			width: 360px;
+			height: 360px;
+			animation-duration: 3.5s;
+		}
+		li:nth-child(6) span{
+			background-color: #ccc;
+		}
+		li:nth-child(7){
+			width: 420px;
+			height: 420px;
+			animation-duration: 4s;
+		}
+		li:nth-child(7) span{
+			background-color: #87a82b;
+		}
+		li:nth-child(8){
+			width: 480px;
+			height: 480px;
+			animation-duration: 4.5s;
+		}
+		li:nth-child(8) span{
+			background-color: #00abcc;
+		}
+		li:nth-child(9){
+			width: 540px;
+			height: 540px;
+			animation-duration: 5s;
+		}
+		li:nth-child(9) span{
+			background-color: #ffbde5;
+		}
+		li:nth-child(10){
+			width: 600px;
+			height: 600px;
+			animation-duration: 5.5s;
+		}
+		li:nth-child(10) span{
+			background-color: white;
+		}
+		li span{
+			background-color: green;
+			position: absolute;
+			border-radius: 50%;
+			width: 12px;
+			height: 12px;
+			left: 50%;
+			top: -6px;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li></li>
+		<li><span></span></li>
+		<li><span></span></li>
+		<li><span></span></li>
+		<li><span></span></li>
+		<li><span></span></li>
+		<li><span></span></li>
+		<li><span></span></li>
+		<li><span></span></li>
+		<li><span></span></li>
+	</ul>
+</body>
+<script>
+	
+</script>
+</html>

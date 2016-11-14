@@ -30,7 +30,10 @@ namespace JQueryPlugins.Controllers
             return Json(new { total = count, rows = result }, JsonRequestBehavior.AllowGet);
         }
 
+        unsafe class Student
+        {
 
+        }
 
-    }
+}
 }

@@ -1,24 +1,24 @@
-create trigger trigger_BankTrans_insert 
+ï»¿create trigger trigger_BankTrans_insert 
 on BankTrans
 after insert 
 as begin
-	-- ÔÚ´¥·¢Æ÷ÖĞ£¬ÓĞÒ»ÕÅÁÙÊ±±í¿ÉÒÔÓÃ£¬½Ğinserted±í£¬Õâ¸ö±íµÄ½á¹¹ºÍÎÒÃÇ²åÈëÊı¾İµÄ±í½á¹ûÒ»Ñù£¬Õâ¸ö±íÖĞ´æ·Å×Å¸Õ¸Õ²åÈëµÄÊı¾İ
+	-- åœ¨è§¦å‘å™¨ä¸­ï¼Œæœ‰ä¸€å¼ ä¸´æ—¶è¡¨å¯ä»¥ç”¨ï¼Œå«insertedè¡¨ï¼Œè¿™ä¸ªè¡¨çš„ç»“æ„å’Œæˆ‘ä»¬æ’å…¥æ•°æ®çš„è¡¨ç»“æœä¸€æ ·ï¼Œè¿™ä¸ªè¡¨ä¸­å­˜æ”¾ç€åˆšåˆšæ’å…¥çš„æ•°æ®
 	declare @cardId char(3)
 	declare @money money,@cardMoney money
 	select @cardId=CardId,@money=TransMoney from inserted
 	if(@money<0) 
-	begin	-- ÓÃ»§ÔÚÈ¡Ç®
-			-- ²éÑ¯ÕË»§Ç®Êı
+	begin	-- ç”¨æˆ·åœ¨å–é’±
+			-- æŸ¥è¯¢è´¦æˆ·é’±æ•°
 		select @cardMoney=CardMoney from BankCard where CardId=@cardId
 		if((@cardMoney+@money)<0)
-		begin -- Ç®Êı²»¹»
+		begin -- é’±æ•°ä¸å¤Ÿ
 			rollback transaction
-			raiserror('Óà¶î²»×ã',18,1)
+			raiserror('ä½™é¢ä¸è¶³',18,1)
 			return
 		end
 	end
 	
-	-- ÓÃ»§ÔÚ´æÇ®»òÕßÇ®¹»È¡
+	-- ç”¨æˆ·åœ¨å­˜é’±æˆ–è€…é’±å¤Ÿå–
 	update BankCard set CardMoney=CardMoney+@money where CardId=@cardId
 end
 
