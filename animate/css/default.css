@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-12-15 15:48:01
+ * @version $Id$
+ */
+ html,body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;       
+	font-size:11px;        
+	color:#999999;       
+	line-height:25px;       
+	letter-spacing:1px
+ }
+.bg{
+	height: 100%;
+	width: 100%;
+	background-color: orange;
+}
+.content{
+	width: 50%;
+	margin: 0 auto;
+	padding: 100px 0 0 0;
+	text-align: center;
+	height: 80%;
+}
+.msg{
+	width: 100%;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 40px;
+}
+.action{
+	position: fixed;
+	width: 20%;
+	height: 40px;
+	bottom: 100px;
+	left: 40%;
+	text-align: center;
+}
+.btn{
+	background-color: #eee;
+	color: #555;
+	margin: 0;
+	padding: 5px 10px;
+}
+
+.content p{
+	animation: myanimation 3s;
+}
+
+@keyframes myanimation{
+	0% { font-size: 10px; padding-top: 5px;opacity: 0.1;}
+	100% {font-size: 20px; padding-top: 40px; opacity: 1;}
+}
+
