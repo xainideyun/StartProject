@@ -4,16 +4,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>title</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<!-- <link rel="icon" href="./favicon.ico" mce_href="./favicon.ico" type="image/x-icon" > -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/default.css">
-	<style type="text/css">
-		body {
-			background: #6b92b9;
-		}
-		canvas {
-			display: block;
-		}
-	</style>
 </head>
 <body>
 	<div class="htmleaf-container">
@@ -25,16 +20,31 @@
 		<canvas id="canvas"></canvas>
 
 		<div>
-			<audio id="musicBox" src="data/棉花糖.mp3" autoplay loop></audio>
+			<audio id="musicBox" src="data/愿得一人心.mp3" autoplay loop></audio>
 		</div>
-		<p class="music" id="music-msg">
-			
+
+
+		<div class="list-container">
+			<ul class="music-list">
+			</ul>
+			<p class="faward">
+				<i class="glyphicon glyphicon-forward"></i>
+			</p>
+		</div>
+
+		<p class="narrator">
+			曾在我背包小小夹层里的那个人
 		</p>
+
+		<p class="next-narrator">
+			<span id="next">下一条 <i class="glyphicon glyphicon-heart"></i></span>
+		</p>
+
 	</div>
-			<select id="music" class="music-select"></select>
 	
 	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
 	<script src="js/snow.js"></script>
 	<script src="js/index.js"></script>
 </body>
