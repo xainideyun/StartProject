@@ -6,14 +6,14 @@
  */
 
 (function($){
-	var pageInfo = {
+	var pageInfo = $.extend({}, {
 		title_en: "Marry Christmas",
 		title_ch: "圣诞快乐",
 		name: "小灰灰",
-		music: ["小跳蛙", "棉花糖", "我不愿让你一个人", "我想大声告诉你", "愿得一人心", "如果我变成回忆", "你那么爱他", "豆浆油条"],
+		music: ["愿得一人心", "小跳蛙", "棉花糖", "我不愿让你一个人", "我想大声告诉你", "如果我变成回忆", "你那么爱他", "豆浆油条"],
 		msg: ["只愿得一人心", "白首不分离", "这清晰的话语需要巨大的勇气"],
 		expend: false
-	};
+	}, personInfo);
 
 	var pageCtrl = {
 		body: $("body"),
@@ -68,6 +68,32 @@
 			musicPlay("data/" + pageInfo.music[0] + ".mp3");
 			$(pageCtrl.list.find("li")[0]).addClass('active');
 		});
+		wx.onMenuShareTimeline({
+		    title: pageInfo.title,
+		    link: pageInfo.link,
+		    imgUrl: pageInfo.imgUrl,
+		    desc: pageInfo.desc,
+		    success: function () {
+		        
+		    },
+		    cancel: function () { 
+		        
+		    }
+		});
+		wx.onMenuShareAppMessage({
+		    title: pageInfo.title,
+		    link: pageInfo.link,
+		    imgUrl: pageInfo.imgUrl,
+		    desc: pageInfo.desc,
+		    type: '', // 分享类型,music、video或link，不填默认为link
+		    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+		    success: function () { 
+		        // 用户确认分享后执行的回调函数
+		    },
+		    cancel: function () { 
+		        // 用户取消分享后执行的回调函数
+		    }
+		});
 	}
 
 	function musicPlay(url){
@@ -79,7 +105,10 @@
 
 	var msgNum = 0;
 	pageCtrl.next.on("click", function(){
-		if(msgNum === pageInfo.msg.length)return;
+		if(msgNum === pageInfo.msg.length - 1){
+			pageCtrl.next.text("END...");
+			pageCtrl.next.off("click");
+		}
 		$(".narrator").remove();
 		$("<p class=\"narrator\">").text(pageInfo.msg[msgNum++]).appendTo(pageCtrl.body);
 	}).trigger('click');

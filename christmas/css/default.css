@@ -343,32 +343,46 @@ canvas {
 .narrator{
 	position: absolute;
 	width: 100%;
-	/*left: 25%;*/
-	top: 150px;
+	top: 200px;
 	text-align: center;
 	color: orange;
 	font-family: '微软雅黑';
-	font-size: 15px;
+	font-size: 20px;
 	padding-top: 70px;
 	letter-spacing: 2px;
 	animation-name: mynarrator;
-    animation-duration: 2s;
-    animation-timing-function: esae;
+    animation-duration: 1s;
+    animation-timing-function: linear;
     animation-delay: 0;
     animation-direction: alternate;
     animation-play-state: running;
 }
 
+
+@keyframes mynext{
+	0% {opacity: .4;}
+	100% {opacity: 1;}
+}
+
 .next-narrator{
 	position: absolute;
 	width: 100%;
-	bottom: 200px;
+	bottom: 100px;
 	font-size: 12px;
 	color: yellow;
 	text-align: center;
-	opacity: .6;
+	animation-name: mynext;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
 }
 .next-narrator span{
 	border: 1px solid yellow;
 	padding: 2px;
+}
+.myimg{
+	display: none;
 }
