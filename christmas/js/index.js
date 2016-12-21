@@ -24,7 +24,9 @@
 		container: $(".list-container"),
 		list: $(".music-list"),
 		btn: $(".faward"),
-		next: $("#next")
+		next: $("#next"),
+		readAll: $(".read-all"),
+		read: $("#read")
 	};
 	pageCtrl.title.text(pageInfo.title_ch + "-" + pageInfo.name);
 	pageCtrl.en.text(pageInfo.title_en);
@@ -36,11 +38,7 @@
 	});
 
 	pageCtrl.list.on("click", "li>a",function(){
-		var self = $(this);
-		var name = self.text();
-		musicPlay("data/" + name + ".mp3");
-		pageCtrl.list.find("li").removeClass("active");
-		self.closest("li").addClass('active');
+		nextSong.call(this);
 	});
 	pageCtrl.btn.on("click", function(){
 		pageCtrl.btn.empty();
@@ -66,6 +64,7 @@
 		});
 		wx.ready(function () {
 			musicPlay("data/" + pageInfo.music[0] + ".mp3");
+
 			$(pageCtrl.list.find("li")[0]).addClass('active');
 			wx.onMenuShareTimeline({
 			    title: pageInfo.title,
@@ -97,11 +96,6 @@
 		});
 	}
 
-	function musicPlay(url){
-	    media.src = url;
-	    media.play();
-	}
-
 	var msgNum = 0;
 	pageCtrl.next.on("click", function(){
 		if(msgNum === pageInfo.msg.length - 1){
@@ -111,5 +105,38 @@
 		$(".narrator").remove();
 		$("<p class=\"narrator\">").text(pageInfo.msg[msgNum++]).appendTo(pageCtrl.body);
 	}).trigger('click');
+	pageCtrl.read.on("click", function(){
+		$(".narrator").remove();
+		var all = $("<p class=\"narrator\">");
+		pageCtrl.next.hide();
+		$.each(pageInfo.msg, function(index, obj){
+			all.append($("<span>").text(obj));
+			all.append($("<br>"));
+		});
+		all.css({color: "yellow", fontSize: "15px"});
+		$("body").append(all);
+		pageCtrl.read.off("click").hide();
+	});
+	showRead(30000);
+
+	function musicPlay(url){
+	    media.src = url;
+	    media.play();
+	}
+
+	function showRead(time){
+		setTimeout(function(){
+			pageCtrl.readAll.show();
+		}, time);
+	}
+
+	function nextSong(){
+		var self = $(this);
+		var name = self.text();
+		musicPlay("data/" + name + ".mp3");
+		pageCtrl.list.find("li").removeClass("active");
+		self.closest("li").addClass('active');
+	}
+
 
 })(jQuery);

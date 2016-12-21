@@ -388,9 +388,15 @@ canvas {
 	/*display: none;*/
 }
 
-.dwdw{
+.read-all{
 	position: absolute;
-	left: 100px;
-	z-index: 10000;
-	top: 100px;
+	right: 10px;
+	bottom: 50px;
+	display: none;
+	font-size: 12px;
+	color: yellow;
+}
+.read-all span{
+	border: 1px solid yellow;
+	padding: 2px;
 }
