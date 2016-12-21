@@ -3,7 +3,7 @@ var personInfo = {
 	title: "圣诞快乐-李娟娟",
 	name: "李娟娟",
 	link: "http://www.cscec3b.com:3080/Other/Christmas/lijj.html",
-	imgUrl: "img/lijj.jpg",
+	imgUrl: "http://www.cscec3b.com:3080/Other/Christmas/img/lijj.jpg",
 	desc: "显示不正常一定要重新进入哦！",
 	msg: [
 	"如果美丽是一种罪", 

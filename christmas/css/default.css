@@ -384,5 +384,13 @@ canvas {
 	padding: 2px;
 }
 .myimg{
-	display: none;
+	width: 1px;
+	/*display: none;*/
+}
+
+.dwdw{
+	position: absolute;
+	left: 100px;
+	z-index: 10000;
+	top: 100px;
 }

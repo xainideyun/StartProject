@@ -67,40 +67,39 @@
 		wx.ready(function () {
 			musicPlay("data/" + pageInfo.music[0] + ".mp3");
 			$(pageCtrl.list.find("li")[0]).addClass('active');
-		});
-		wx.onMenuShareTimeline({
-		    title: pageInfo.title,
-		    link: pageInfo.link,
-		    imgUrl: pageInfo.imgUrl,
-		    desc: pageInfo.desc,
-		    success: function () {
-		        
-		    },
-		    cancel: function () { 
-		        
-		    }
-		});
-		wx.onMenuShareAppMessage({
-		    title: pageInfo.title,
-		    link: pageInfo.link,
-		    imgUrl: pageInfo.imgUrl,
-		    desc: pageInfo.desc,
-		    type: '', // 分享类型,music、video或link，不填默认为link
-		    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
-		    success: function () { 
-		        // 用户确认分享后执行的回调函数
-		    },
-		    cancel: function () { 
-		        // 用户取消分享后执行的回调函数
-		    }
+			wx.onMenuShareTimeline({
+			    title: pageInfo.title,
+			    link: pageInfo.link,
+			    imgUrl: pageInfo.imgUrl,
+			    desc: pageInfo.desc,
+			    success: function () {
+			        alert("你好吗");
+			    },
+			    cancel: function () { 
+			        
+			    }
+			});
+			wx.onMenuShareAppMessage({
+			    title: pageInfo.title,
+			    link: pageInfo.link,
+			    imgUrl: pageInfo.imgUrl,
+			    desc: pageInfo.desc,
+			    type: '', // 分享类型,music、video或link，不填默认为link
+			    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+			    success: function () { 
+			        // 用户确认分享后执行的回调函数
+			        alert("你好吗");
+			    },
+			    cancel: function () { 
+			        // 用户取消分享后执行的回调函数
+			    }
+			});
 		});
 	}
 
 	function musicPlay(url){
-		wx.ready(function () {
-		    media.src = url;
-		    media.play();
-		});
+	    media.src = url;
+	    media.play();
 	}
 
 	var msgNum = 0;
