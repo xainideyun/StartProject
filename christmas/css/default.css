@@ -286,7 +286,7 @@ canvas {
 	bottom: 5px;
 	width: 200px;
 	opacity: .6;
-	transition: 1s all;
+	transition: 0.6s all;
 }
 
 .music-list{
@@ -297,6 +297,7 @@ canvas {
 	color: #fff;
 	background-color: #56728e;
 	left: -40px;
+	font-size: 13px;
 }
 
 .music-list li{

@@ -24,7 +24,6 @@ namespace _05扩展方法
             Console.WriteLine(t.Name + "...." + t.Count);
 
             Console.WriteLine(".....................................");
-
             MyHandler s = (a, b, c) =>      // 默认参数
             {
                 c = new Test3();

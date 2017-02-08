@@ -1,0 +1,16 @@
+## 忽略的文件
+*.dll
+*.log
+*.class
+*.exe		merge=binary
+*.pdb		merge=binary
+
+## 忽略的文件夹
+bin
+log
+obj
+.vs
+myhelp
+packages
+fonts
+node_modules
